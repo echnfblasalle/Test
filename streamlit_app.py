@@ -1,2 +1,3 @@
 import streamlit as st 
-st.write("Hello")
+name=st.imput("Your name")
+st.write("Hello"+name)
