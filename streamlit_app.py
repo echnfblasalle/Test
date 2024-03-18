@@ -15,9 +15,9 @@ word_fr=voc["Définition"].values[j]
 st.write("Traduis:"+word_fr)
 def is_correct(i,j):
    if i==j:
-     st_write("Bravo")
+     st.write("Bravo")
    else:
-    st_write("Raté")
+    st.write("Raté")
 for i in range(4):
   st.button(voc["Hanzi"].values[indices[i]],on_click=is_correct,args=(indices[i],j))
 
