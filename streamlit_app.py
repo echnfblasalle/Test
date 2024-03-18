@@ -14,4 +14,10 @@ j=np.random.choice(indices)
 word_fr=voc["Définition"].values[j]
 st.write("Traduis:"+word_fr)
 for i in range(4):
-  st.button(voc["Hanzi"].values[indices[i]])
+  st.button(voc["Hanzi"].values[indices[i]]),on clich=is_correct,args=[indices[i],j])
+def is_correct(i,j):
+  if i==j
+  st_write("Bravo")
+else:
+st_write("Raté")
+  
