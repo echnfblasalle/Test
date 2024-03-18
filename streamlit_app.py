@@ -7,6 +7,7 @@ i=np.random.choice(range(l))
 word_fr=voc['Définition'].values[i]
 word_chi=voc['Hanzi'].values[i]
 word_pin=voc['Pinyin'].values[i]
+st.button("refresh")
 indices=np.random.choice(l,size=4,replace=False)
 j=np.random.choice(indices)
 word_fr=voc["Définition"].values[j]
@@ -18,5 +19,5 @@ def is_correct(i,j):
     st.write("Raté")
 for i in range(4):
   st.button(voc["Hanzi"].values[indices[i]],on_click=is_correct,args=(indices[i],j))
-st.button("refresh")
+
 
