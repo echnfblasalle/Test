@@ -6,5 +6,6 @@ st.dataframe(voc)
 l=voc.shape[o]
 i=np.random.choice(range(l))
 word_fr=voc['definition'].values[i]
-word_chi=voc['hanzi'].values[i]
-st.write(word_fr+"hanzi"+word_chi)
+word_chi=voc['Hanzi'].values[i]
+st.write(word_fr+"Hanzi"+word_chi)
+ 
