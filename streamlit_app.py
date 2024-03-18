@@ -9,3 +9,4 @@ word_chi=voc['Hanzi'].values[i]
 word_pin=voc['Pinyin'].values[i]
 st.write(word_fr+" "+word_chi+" "+word_pin)
 st.button("refresh")
+indices=np.random.choices(range(l),h=4,replace=False)
