@@ -8,11 +8,17 @@ j = np.random.choice(indices)
 word_fr=voc['Définition'].values[j]
 st.write('Traduis: '+word_fr)
 
+st.session_state["my_var"]=1
+if "my war" in st.stession_state
+del st.session_state["my_var"]
+
 def is_correct(i, j):
   if i==j:
     st.write("Bien joué !")
+    st.session_state["indices"]
   else:
     st.write("Perdu !")
+    st.session_state["indices"]=indices
 
 col1, col2 = st.columns(2) 
 with col1:
